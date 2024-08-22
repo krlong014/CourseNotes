@@ -1,0 +1,354 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 13.1' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[     12106,        346]
+NotebookOptionsPosition[      9467,        292]
+NotebookOutlinePosition[     10109,        313]
+CellTagsIndexPosition[     10066,        310]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+
+Cell[CellGroupData[{
+Cell["A simple DE system example", "Chapter",
+ CellChangeTimes->{{3.883332644827281*^9, 
+  3.883332655318698*^9}},ExpressionUUID->"d44dbeb7-e6d6-4960-a8c7-\
+b15748ccf247"],
+
+Cell["Katharine Long, MATH 4354", "Subtitle",
+ CellChangeTimes->{{3.883332765379869*^9, 
+  3.883332774080937*^9}},ExpressionUUID->"df9d146c-b24f-4197-972a-\
+540c96521b27"],
+
+Cell[TextData[{
+ "Here\[CloseCurlyQuote]s how to solve ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    RowBox[{"u", "'"}], "=", 
+    RowBox[{"A", " ", "u"}]}], TraditionalForm]],
+  FormatType->TraditionalForm,ExpressionUUID->
+  "bf483f68-0563-4924-873f-a129940e9633"],
+ " with initial value ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    RowBox[{"u", "(", "0", ")"}], "=", 
+    SubscriptBox["u", "0"]}], TraditionalForm]],
+  FormatType->TraditionalForm,ExpressionUUID->
+  "d46b732a-271f-43c5-8c59-aeee66ae20e2"],
+ ". With this method, it\[CloseCurlyQuote]s essential that ",
+ Cell[BoxData[
+  FormBox["A", TraditionalForm]],
+  FormatType->TraditionalForm,ExpressionUUID->
+  "3530eb6d-21d4-4a65-b1e9-31bc7fd5aed1"],
+ " is diagonalizable. "
+}], "Text",
+ CellChangeTimes->{{3.8833326636122*^9, 3.883332711964163*^9}, {
+  3.883332784339158*^9, 
+  3.88333283855622*^9}},ExpressionUUID->"c75b009c-1894-4242-84f6-\
+ff5fb9410ef7"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"A", "=", 
+  RowBox[{"{", 
+   RowBox[{
+    RowBox[{"{", 
+     RowBox[{"7", ",", 
+      RowBox[{"-", "1"}]}], "}"}], ",", 
+    RowBox[{"{", 
+     RowBox[{
+      RowBox[{"-", "1"}], ",", "7"}], "}"}]}], "}"}]}]], "Input",
+ CellChangeTimes->{{3.883239197322929*^9, 3.883239218654519*^9}, {
+  3.883239266073084*^9, 3.8832392826067047`*^9}},
+ CellLabel->"In[2]:=",ExpressionUUID->"a6d21402-c3ec-4d4e-80fb-97936a66a731"],
+
+Cell[BoxData[
+ FormBox[
+  RowBox[{"(", "\[NoBreak]", GridBox[{
+     {"7", 
+      RowBox[{"-", "1"}]},
+     {
+      RowBox[{"-", "1"}], "7"}
+    },
+    GridBoxAlignment->{"Columns" -> {{Center}}, "Rows" -> {{Baseline}}},
+    GridBoxSpacings->{"Columns" -> {
+        Offset[0.27999999999999997`], {
+         Offset[0.7]}, 
+        Offset[0.27999999999999997`]}, "Rows" -> {
+        Offset[0.2], {
+         Offset[0.4]}, 
+        Offset[0.2]}}], "\[NoBreak]", ")"}], TraditionalForm]], "Output",
+ CellChangeTimes->{{3.883239272749433*^9, 3.883239283393278*^9}},
+ CellLabel->"Out[2]=",ExpressionUUID->"0c012065-f03a-4ec9-a14b-bf5bb8e3b961"]
+}, Open  ]],
+
+Cell[TextData[{
+ "To write ",
+ Cell[BoxData[
+  FormBox[
+   SubscriptBox["u", "0"], TraditionalForm]],
+  FormatType->TraditionalForm,ExpressionUUID->
+  "889db82d-3a3c-4c29-a7d3-198e589beeb9"],
+ " with the subscript, type u\[ControlKey]_0. Not sure if this is possible on \
+the cloud version. If not, or if you don\[CloseCurlyQuote]t want to bother \
+with subscripts, just call the variable u0 instead of ",
+ Cell[BoxData[
+  FormBox[
+   SubscriptBox["u", "0"], TraditionalForm]],
+  FormatType->TraditionalForm,ExpressionUUID->
+  "18e77083-072a-435c-b81b-afb963fa1746"],
+ ". "
+}], "Text",
+ CellChangeTimes->{{3.8833324011862917`*^9, 
+  3.8833325196518087`*^9}},ExpressionUUID->"3577853d-3e07-430b-8e71-\
+64f5f2168576"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{
+  SubscriptBox["u", "0"], "=", 
+  RowBox[{"{", 
+   RowBox[{"4", ",", "2"}], "}"}]}]], "Input",
+ CellChangeTimes->{{3.883239378196501*^9, 3.8832393835494137`*^9}},
+ CellLabel->"In[6]:=",ExpressionUUID->"d28c48e2-ff5a-4a3c-8849-817effad96d3"],
+
+Cell[BoxData[
+ FormBox[
+  RowBox[{"{", 
+   RowBox[{"4", ",", "2"}], "}"}], TraditionalForm]], "Output",
+ CellChangeTimes->{3.8832393902481194`*^9},
+ CellLabel->"Out[6]=",ExpressionUUID->"cf6f5a06-ff11-4235-b9c4-192cad9a9ade"]
+}, Open  ]],
+
+Cell["\<\
+To make the capital lambda (\[CapitalLambda]) symbol, type \[EscapeKey]L\
+\[EscapeKey]. If your cloud version won\[CloseCurlyQuote]t let you do this, \
+just call the variable L instead of \[CapitalLambda].\
+\>", "Text",
+ CellChangeTimes->{{3.883332353464857*^9, 3.8833323915220833`*^9}, {
+  3.883332527442155*^9, 
+  3.8833325596478643`*^9}},ExpressionUUID->"2bf69d27-3dbc-401a-a8ff-\
+df093f1838eb"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"\[CapitalLambda]", "=", 
+  RowBox[{"DiagonalMatrix", "[", 
+   RowBox[{"Eigenvalues", "[", "A", "]"}], "]"}]}]], "Input",
+ CellChangeTimes->{{3.8832392894466763`*^9, 3.883239293897234*^9}, {
+  3.883239536243038*^9, 3.88323954355966*^9}},
+ CellLabel->"In[8]:=",ExpressionUUID->"f33fc144-4e1a-4a6f-aff0-6c1f53ca249b"],
+
+Cell[BoxData[
+ FormBox[
+  RowBox[{"(", "\[NoBreak]", GridBox[{
+     {"8", "0"},
+     {"0", "6"}
+    },
+    GridBoxAlignment->{"Columns" -> {{Center}}, "Rows" -> {{Baseline}}},
+    GridBoxSpacings->{"Columns" -> {
+        Offset[0.27999999999999997`], {
+         Offset[0.7]}, 
+        Offset[0.27999999999999997`]}, "Rows" -> {
+        Offset[0.2], {
+         Offset[0.4]}, 
+        Offset[0.2]}}], "\[NoBreak]", ")"}], TraditionalForm]], "Output",
+ CellChangeTimes->{3.8832392943974133`*^9, 3.8832395440495443`*^9},
+ CellLabel->"Out[8]=",ExpressionUUID->"57a84380-9dc5-444b-beef-3c09b32e980b"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"V", "=", 
+  RowBox[{"Transpose", "[", 
+   RowBox[{"Eigenvectors", "[", "A", "]"}], "]"}]}]], "Input",
+ CellChangeTimes->{{3.883239307453019*^9, 3.883239313888577*^9}, {
+  3.883239350795401*^9, 3.8832393583880577`*^9}},
+ CellLabel->"In[5]:=",ExpressionUUID->"412475d6-e1d4-4a6d-9a99-5c2080e7a76f"],
+
+Cell[BoxData[
+ FormBox[
+  RowBox[{"(", "\[NoBreak]", GridBox[{
+     {
+      RowBox[{"-", "1"}], "1"},
+     {"1", "1"}
+    },
+    GridBoxAlignment->{"Columns" -> {{Center}}, "Rows" -> {{Baseline}}},
+    GridBoxSpacings->{"Columns" -> {
+        Offset[0.27999999999999997`], {
+         Offset[0.7]}, 
+        Offset[0.27999999999999997`]}, "Rows" -> {
+        Offset[0.2], {
+         Offset[0.4]}, 
+        Offset[0.2]}}], "\[NoBreak]", ")"}], TraditionalForm]], "Output",
+ CellChangeTimes->{3.883239314315075*^9, 3.883239358817277*^9},
+ CellLabel->"Out[5]=",ExpressionUUID->"d8d82139-c4f8-419f-94e7-1bcdde0d2f14"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"c", " ", "=", " ", 
+  RowBox[{"LinearSolve", "[", 
+   RowBox[{"V", ",", 
+    SubscriptBox["u", "0"]}], "]"}]}]], "Input",
+ CellChangeTimes->{{3.883239401460513*^9, 3.883239417342474*^9}},
+ CellLabel->"In[7]:=",ExpressionUUID->"4cd067fd-69d8-4b1b-a73a-e6d18be2f7fb"],
+
+Cell[BoxData[
+ FormBox[
+  RowBox[{"{", 
+   RowBox[{
+    RowBox[{"-", "1"}], ",", "3"}], "}"}], TraditionalForm]], "Output",
+ CellChangeTimes->{3.883239418842495*^9},
+ CellLabel->"Out[7]=",ExpressionUUID->"8544e5ac-f04d-447d-bba2-ab82ecd5ed4b"]
+}, Open  ]],
+
+Cell["\<\
+Important: put a space between \[CapitalLambda] and t. If not, it will be \
+treated as a single variable named \[OpenCurlyDoubleQuote]\[CapitalLambda]t\
+\[CloseCurlyDoubleQuote] instead of the product \[CapitalLambda] times t.
+
+The underscore is important here. Trust me. I\[CloseCurlyQuote]ll explain why \
+later. \
+\>", "Text",
+ CellChangeTimes->{{3.883332320833644*^9, 3.883332345866515*^9}, {
+  3.883332566789426*^9, 
+  3.883332632279089*^9}},ExpressionUUID->"4456165b-b65d-4505-b72c-\
+658a2554fb0f"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"decoupledSoln", "[", "t_", "]"}], "=", " ", 
+  RowBox[{
+   RowBox[{"MatrixExp", "[", 
+    RowBox[{"\[CapitalLambda]", " ", "t"}], "]"}], ".", "c"}]}]], "Input",
+ CellChangeTimes->{{3.883239503907917*^9, 3.883239550158864*^9}, {
+  3.883239592458201*^9, 3.8832395988398123`*^9}},
+ CellLabel->"In[10]:=",ExpressionUUID->"f6dd9362-db6e-4bc4-ac47-b135db6dc0ec"],
+
+Cell[BoxData[
+ FormBox[
+  RowBox[{"{", 
+   RowBox[{
+    RowBox[{"-", 
+     SuperscriptBox["\[ExponentialE]", 
+      RowBox[{"8", " ", "t"}]]}], ",", 
+    RowBox[{"3", " ", 
+     SuperscriptBox["\[ExponentialE]", 
+      RowBox[{"6", " ", "t"}]]}]}], "}"}], TraditionalForm]], "Output",
+ CellChangeTimes->{3.8832395510102053`*^9, 3.883239600527131*^9},
+ CellLabel->"Out[10]=",ExpressionUUID->"1b9b4b9b-0c43-43ee-91d9-71343f5fecb4"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"uSoln", "[", "t_", "]"}], "=", 
+  RowBox[{"V", " ", ".", " ", 
+   RowBox[{"decoupledSoln", "[", "t", "]"}]}]}]], "Input",
+ CellChangeTimes->{{3.883239609298656*^9, 3.883239620693407*^9}},
+ CellLabel->"In[11]:=",ExpressionUUID->"22426a70-b56a-48e9-ba57-2dda9b8c0356"],
+
+Cell[BoxData[
+ FormBox[
+  RowBox[{"{", 
+   RowBox[{
+    RowBox[{
+     RowBox[{"3", " ", 
+      SuperscriptBox["\[ExponentialE]", 
+       RowBox[{"6", " ", "t"}]]}], "+", 
+     SuperscriptBox["\[ExponentialE]", 
+      RowBox[{"8", " ", "t"}]]}], ",", 
+    RowBox[{
+     RowBox[{"3", " ", 
+      SuperscriptBox["\[ExponentialE]", 
+       RowBox[{"6", " ", "t"}]]}], "-", 
+     SuperscriptBox["\[ExponentialE]", 
+      RowBox[{"8", " ", "t"}]]}]}], "}"}], TraditionalForm]], "Output",
+ CellChangeTimes->{3.883239621977008*^9},
+ CellLabel->"Out[11]=",ExpressionUUID->"bf40f73b-b62a-4ff0-a76f-9ce46173198c"]
+}, Open  ]]
+}, Open  ]]
+},
+WindowSize->{1009, 1124},
+WindowMargins->{{216, Automatic}, {Automatic, 26}},
+PrintingCopies->1,
+PrintingPageRange->{1, Automatic},
+Magnification->2.,
+FrontEndVersion->"13.1 for Mac OS X ARM (64-bit) (June 16, 2022)",
+StyleDefinitions->FrontEnd`FileName[{$RootDirectory, "Users", "katharine", 
+   "Library", "Mathematica", "SystemFiles", "FrontEnd", "StyleSheets"}, 
+  "KatharineDefault.nb", CharacterEncoding -> "UTF-8"],
+ExpressionUUID->"de5e4113-ac7e-4394-b64b-ac47c2a0b9fc"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[CellGroupData[{
+Cell[580, 22, 171, 3, 136, "Chapter",ExpressionUUID->"d44dbeb7-e6d6-4960-a8c7-b15748ccf247"],
+Cell[754, 27, 171, 3, 106, "Subtitle",ExpressionUUID->"df9d146c-b24f-4197-972a-540c96521b27"],
+Cell[928, 32, 916, 27, 114, "Text",ExpressionUUID->"c75b009c-1894-4242-84f6-ff5fb9410ef7"],
+Cell[CellGroupData[{
+Cell[1869, 63, 437, 12, 59, "Input",ExpressionUUID->"a6d21402-c3ec-4d4e-80fb-97936a66a731"],
+Cell[2309, 77, 636, 17, 95, "Output",ExpressionUUID->"0c012065-f03a-4ec9-a14b-bf5bb8e3b961"]
+}, Open  ]],
+Cell[2960, 97, 715, 19, 159, "Text",ExpressionUUID->"3577853d-3e07-430b-8e71-64f5f2168576"],
+Cell[CellGroupData[{
+Cell[3700, 120, 264, 6, 59, "Input",ExpressionUUID->"d28c48e2-ff5a-4a3c-8849-817effad96d3"],
+Cell[3967, 128, 225, 5, 60, "Output",ExpressionUUID->"cf6f5a06-ff11-4235-b9c4-192cad9a9ade"]
+}, Open  ]],
+Cell[4207, 136, 408, 8, 114, "Text",ExpressionUUID->"2bf69d27-3dbc-401a-a8ff-df093f1838eb"],
+Cell[CellGroupData[{
+Cell[4640, 148, 338, 6, 59, "Input",ExpressionUUID->"f33fc144-4e1a-4a6f-aff0-6c1f53ca249b"],
+Cell[4981, 156, 594, 15, 95, "Output",ExpressionUUID->"57a84380-9dc5-444b-beef-3c09b32e980b"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[5612, 176, 320, 6, 59, "Input",ExpressionUUID->"412475d6-e1d4-4a6d-9a99-5c2080e7a76f"],
+Cell[5935, 184, 612, 16, 95, "Output",ExpressionUUID->"d8d82139-c4f8-419f-94e7-1bcdde0d2f14"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[6584, 205, 289, 6, 59, "Input",ExpressionUUID->"4cd067fd-69d8-4b1b-a73a-e6d18be2f7fb"],
+Cell[6876, 213, 243, 6, 60, "Output",ExpressionUUID->"8544e5ac-f04d-447d-bba2-ab82ecd5ed4b"]
+}, Open  ]],
+Cell[7134, 222, 514, 11, 204, "Text",ExpressionUUID->"4456165b-b65d-4505-b72c-658a2554fb0f"],
+Cell[CellGroupData[{
+Cell[7673, 237, 391, 8, 59, "Input",ExpressionUUID->"f6dd9362-db6e-4bc4-ac47-b135db6dc0ec"],
+Cell[8067, 247, 429, 11, 70, "Output",ExpressionUUID->"1b9b4b9b-0c43-43ee-91d9-71343f5fecb4"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[8533, 263, 301, 6, 59, "Input",ExpressionUUID->"22426a70-b56a-48e9-ba57-2dda9b8c0356"],
+Cell[8837, 271, 602, 17, 70, "Output",ExpressionUUID->"bf40f73b-b62a-4ff0-a76f-9ce46173198c"]
+}, Open  ]]
+}, Open  ]]
+}
+]
+*)
+
