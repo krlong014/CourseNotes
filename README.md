@@ -10,9 +10,6 @@ Katharine's notes
 
 * [Getting Mathematica](#GetMMA)
 * [Configuring Mathematica](#ConfMMA)
- 
-
-
 
 # Differential equations 2 {#DE2}
 
