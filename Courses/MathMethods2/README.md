@@ -1,5 +1,9 @@
 # Math Methods for Physics 2 (PHYS/MATH 4326)
 
+## Fall 2024 
+* [Syllabus](Fall2024/4326-Fall-2024-syl.pdf)
+* [Logistics slides](Fall2024/4326-F24-Logistics.pdf)
+
 ## Topics
 * Analysis of scalar and vector fields
 * Partial differential equations in physics
