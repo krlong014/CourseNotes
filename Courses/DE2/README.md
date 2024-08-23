@@ -16,7 +16,7 @@
 ## Course materials
 
 ### Software
-* Calculations in this class can get messy and the solutions change in space and time, so we will often use Mathematica for calculation and visualization. Go [here](#getting-mathematica) to get Mathematica. 
+* Calculations in this class can get messy and the solutions hard to visualize, so we will often use Mathematica for calculation and visualization. Go [here](#getting-mathematica) to get Mathematica. 
   * Many homework sets, including the first one, will involve
   Mathematica work. 
 * We'll use Top Hat for daily quizzes. TTU has a site license; if you're a TTU student, get your free app [here](https://www.depts.ttu.edu/itts/software/tophat.php).
