@@ -1,6 +1,10 @@
 
 # Differential equations 2 (MATH 4354)
 
+## Fall 2024 
+* [Syllabus](Fall2024/4354-Fall-2024-syl.pdf)
+* [Logistics slides](Fall2024/4354-F24-Logistics.pdf)
+
 ## Topics
 * Systems of ordinary differential equations
   * Linear systems
