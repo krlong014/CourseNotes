@@ -5,7 +5,7 @@
 * [Logistics slides](Spring2025/4325-S25-Logistics.pdf)
 
 ## Topics
-* Vectors and curvilinear coordinates
+* Vectors and [curvilinear coordinates](../../Topics/CoordinateSystems/README.md)
 * Integration & Delta Functions
 * Differential equations, systems of differential equations
 * Infinite series: power series, asymptotic series, Fourier series, special functions
