@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       154,          7]
-NotebookDataLength[     15135,        390]
-NotebookOptionsPosition[     13319,        352]
-NotebookOutlinePosition[     13883,        370]
-CellTagsIndexPosition[     13840,        367]
+NotebookDataLength[     15981,        414]
+NotebookOptionsPosition[     13973,        374]
+NotebookOutlinePosition[     14538,        392]
+CellTagsIndexPosition[     14495,        389]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -308,7 +308,7 @@ Cell[BoxData[
         Manipulator}, {{
          Hold[$CellContext`\[Phi]$$], Rational[1, 12] Pi}, (-2) Pi, 2 Pi, 
         Rational[1, 144] Pi, ControlType -> Manipulator}}, Typeset`size$$ = {
-      921.3046874999993, {456.79614257812466`, 464.50854492187466`}}, 
+      176.72408020019532`, {12.5830078125, 22.3913720703125}}, 
       Typeset`update$$ = 0, Typeset`initDone$$, Typeset`skipInitDone$$ = True,
        Typeset`keyframeActionsQ$$ = False, Typeset`keyframeList$$ = {}}, 
       DynamicBox[Manipulate`ManipulateBoxes[
@@ -328,7 +328,7 @@ Cell[BoxData[
            Pi, Rational[1, 144] Pi}}, "Options" :> {LabelStyle -> Large}, 
         "DefaultOptions" :> {}],
        ImageSizeCache->{
-        974.6796874999993, {535.6833496093747, 543.3957519531247}},
+        333.526025390625, {92.51819580078126, 100.23059814453126`}},
        SingleEvaluation->True],
       Deinitialization:>None,
       DynamicModuleValues:>{},
@@ -346,12 +346,34 @@ Cell[BoxData[
    3.947545140734394*^9, {3.94754519202997*^9, 3.947545218893931*^9}, 
    3.947545255359819*^9, 3.947545323047373*^9, 3.9475453588565083`*^9, 
    3.947545506952965*^9},
- CellLabel->"Out[67]=",ExpressionUUID->"8cb43da1-ef5b-4cdb-9cc0-82543991f51f"]
+ CellLabel->"Out[67]=",ExpressionUUID->"8cb43da1-ef5b-4cdb-9cc0-82543991f51f"],
+
+Cell["\<\
+Show::gcomb: Could not combine the graphics objects in 
+                         7 Pi
+    Show[grid, vecs[0.9, ----]].
+                          48\
+\>", "Message", "MSG",
+ CellChangeTimes->{3.947547279334004*^9},
+ CellLabel->
+  "During evaluation of \
+In[1]:=",ExpressionUUID->"79306c09-d010-4135-a939-01b4998ede7d"],
+
+Cell["\<\
+Show::gcomb: Could not combine the graphics objects in 
+                         7 Pi
+    Show[grid, vecs[0.9, ----]].
+                          48\
+\>", "Message", "MSG",
+ CellChangeTimes->{3.947547279395567*^9},
+ CellLabel->
+  "During evaluation of \
+In[1]:=",ExpressionUUID->"48d96fb3-522c-4580-8d52-4e7ab610bae1"]
 }, Open  ]]
 }, Open  ]]
 },
 WindowSize->{1245, 1115},
-WindowMargins->{{Automatic, 89}, {Automatic, 20}},
+WindowMargins->{{211, Automatic}, {Automatic, 10}},
 FrontEndVersion->"14.1 for Mac OS X ARM (64-bit) (July 16, 2024)",
 StyleDefinitions->FrontEnd`FileName[{$RootDirectory, "Users", "katharine", 
    "Library", "Wolfram", "SystemFiles", "FrontEnd", "StyleSheets"}, 
@@ -389,7 +411,9 @@ Cell[6964, 203, 347, 9, 37, "Output",ExpressionUUID->"1917845d-caa2-4f3c-8eaf-60
 Cell[7326, 215, 1904, 46, 164, "Input",ExpressionUUID->"e7a47e5e-591a-4a81-8059-96e44c3d0700"],
 Cell[CellGroupData[{
 Cell[9255, 265, 1305, 30, 36, "Input",ExpressionUUID->"40f7eb0f-44f0-4697-b267-341590ece3ca"],
-Cell[10563, 297, 2728, 51, 1100, "Output",ExpressionUUID->"8cb43da1-ef5b-4cdb-9cc0-82543991f51f"]
+Cell[10563, 297, 2722, 51, 213, "Output",ExpressionUUID->"8cb43da1-ef5b-4cdb-9cc0-82543991f51f"],
+Cell[13288, 350, 327, 9, 74, "Message",ExpressionUUID->"79306c09-d010-4135-a939-01b4998ede7d"],
+Cell[13618, 361, 327, 9, 74, "Message",ExpressionUUID->"48d96fb3-522c-4580-8d52-4e7ab610bae1"]
 }, Open  ]]
 }, Open  ]]
 }
